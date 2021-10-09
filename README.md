@@ -23,6 +23,12 @@ Move into new project: `cd <project>`
 Initialize directory as git: `git init -b main`
 Create repo in GitHub:  `gh repo create <project>`
 Pull down new gitignore and license if necessary: `git pull --set-upstream origin main`
+Add files:  `git add .`
+Commit files:  `git commit -m "message"`
+Push to repo: `git push`
+
+
+
 Check out a repository:  `git clone /path/to/repository`
 Add one or more files to staging:  `git add <filename>` or `git add .`
 Commit changes to head (but not yet to the remote repository): `git commit -m "Commit message"`
