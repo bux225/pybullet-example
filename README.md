@@ -6,14 +6,12 @@ generate public and private key and put into github exempt
 
 VIRTUAL ENVIRONMENT
 
-`$ python3 -m venv venv`
+Create a virtual environment: `python3 -m venv venv`
+Activate virtual environment: `source venv/bin/activate`
+Install module(s): `pip install <module>`
+Capture modules in text file: `pip freeze > requirements.txt`
 
-`$ cd venv\Scripts`
-`$ activate.bat`
-
-`$ python -m pip freeze > requirements.txt`
-
-`$ deactivate.bat`
+Deactivate virtual environment: `deactivate`
 
 
 GIT COMMANDS
