@@ -4,19 +4,17 @@ import pybullet_data
 
 p.connect(p.GUI)
 p.setAdditionalSearchPath(pybullet_data.getDataPath())
-#p.createCollisionShape(p.GEOM_PLANE)
+p.createCollisionShape(p.GEOM_PLANE)
 p.createMultiBody(0, 0)
 
-sphereRadius = 0.05
-colSphereId = p.createCollisionShape(p.GEOM_SPHERE, radius=sphereRadius)
-colBoxId = p.createCollisionShape(p.GEOM_BOX,
-                                  halfExtents=[sphereRadius, sphereRadius, sphereRadius])
+strutRadius = 0.05
+colStrutId = p.createCollisionShape(p.GEOM_CYLINDER, radius=strutRadius)
 
 mass = 1
 visualShapeId = -1
 
 link_Masses = [1]
-linkCollisionShapeIndices = [colBoxId]
+linkCollisionShapeIndices = [colStrutId]
 linkVisualShapeIndices = [-1]
 linkPositions = [[0, 0, 0.11]]
 linkOrientations = [[0, 0, 0, 1]]
